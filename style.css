@@ -1,0 +1,186 @@
+/* Style global */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #004d9f79;
+    color: white; 
+    text-align: center; 
+    padding: 10px 0; 
+    z-index: 1000; 
+}
+
+h1 {
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1vh;
+    color: #495057; 
+}
+/* ------------------------------------------------------ */
+
+/* Logos du titre */
+.logo1 {
+    max-width: 45px;
+    margin-right: 2vw;
+}
+.logo2{
+    max-width: 45px;
+    margin-left: 2vw;
+}
+/* ------------------------------------------------------ */
+
+/* séparateur entre titre et nav */
+.separator {
+    height: 2px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 50%, rgba(255, 255, 255, 0) 100%);
+    margin-bottom: 2vh;
+}
+/* ------------------------------------------------------ */
+
+/* Style pour livre lus */
+.readedBooks {
+    background-color: rgb(230, 230, 230);
+}
+.text-success {
+    color : black;
+    font-style: italic;
+    font-weight: 600;
+}
+/* ------------------------------------------------------ */
+
+/* Boutons */
+.btnContainer {
+    margin-top: 4vh;
+    display: flex;
+    justify-content: center;
+}
+/* ------------------------------------------------------ */
+
+/* Liste des livres */
+.list-group-item {
+    transition: background-color 0.3s; 
+}
+.list-group-item:hover {
+    background-color: #e9ecef; 
+}
+/* ------------------------------------------------------ */
+
+/* Centrer listes */
+.displayAttempt {
+    max-width: 33%;
+    margin: 0 auto;
+}
+.displayAttempt2 {
+    max-width: 70vw;
+    margin: 4px auto;
+}
+/* ------------------------------------------------------ */
+
+/* Nav bar */
+.nav-item-custom-width{
+    width: 220px;
+    text-align: center;
+    margin-right: 1vw;
+    margin-left: 1vw;
+}
+.nav-link.active {
+    background-color: #007bff
+}
+/* ------------------------------------------------------ */
+
+#search-bar-edit {
+    max-width: 50%;
+    margin: 0 auto;
+    margin-bottom: 1vh;
+}
+/* ------------------------------------------------------ */
+
+/* Popup */
+.popup-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+    background-color: rgba(17, 168, 17, 0.8);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.icone8{
+    width: 30;
+    height: 30;
+    margin-right: 1vw;
+}
+/* Apparition */
+.show-popup {
+    animation: zoomIn 0.5s ease forwards;
+    opacity: 1;
+}
+/* Disparition */
+.hide-popup {
+    animation: fadeOut 0.5s ease forwards;
+}
+
+/* Cache élément */
+.d-none {
+    display: none;
+}
+
+/* Animation popup */
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.3);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* ------------------------------------------------------ */
+
+/* Main styles */
+
+body {
+    background-color: #fee440;
+}
+svg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.507);
+    padding: 1rem;
+    border-radius: 8px;
+    width: 100vw;
+    height: 100vh;
+}
